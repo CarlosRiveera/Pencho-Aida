@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/textoMejorDelDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:text="@string/lo_mejor_del_dia"
+                android:textColor="@color/selected_tabtext"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/anaranjado">
+
+                <com.ionicframework.penchoyaida233650.util.ImageviewAdapter
+                    android:id="@+id/ImagenCabecera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/TextoCabecera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ImagenCabecera"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-35dp"
+                    android:gravity="center_horizontal"
+                    android:text="Martes 16 de Marzo 2016"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/anaranjado"
+                    android:shadowRadius="3"/>
+            </RelativeLayout>
+
+
+       
+
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:id="@+id/GridViewAlbum"
+                android:layout_marginBottom="5dp"
+                >
+
+
+            </com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

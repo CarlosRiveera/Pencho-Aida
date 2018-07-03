@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/naranja"
+    >
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@color/anaranjado">
+      <com.ionicframework.penchoyaida233650.util.ImageviewAdapter
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/ImagenCabeceraDetalleVideo"
+          />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/videos"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          />
+   </RelativeLayout>
+<TextView
+    android:textStyle="bold"
+    android:layout_margin="10dp"
+    android:text="TITULO"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/TituloVideo"
+    android:textColor="@color/anaranjado"
+    android:gravity="center"
+    />
+<TextView
+
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:text="DESCRIPCION "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/DescipcionVideo"
+    android:textColor="@color/unselected_tabtext"
+    />
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <TextView
+        android:textSize="8sp"
+        android:layout_width="wrap_content"
+        android:id="@+id/TituloFotoAlbum"
+        android:layout_height="wrap_content"
+        android:text="Miercoles 8 de Abril 2016"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/negro"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/volumen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ionicframework.penchoyaida233650.util.ImageviewAdapter
+            android:id="@+id/ImagenPrincipalAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2.5dp"
+            android:contentDescription="@string/imagenalbum" />
+    </LinearLayout>
+
+</LinearLayout>

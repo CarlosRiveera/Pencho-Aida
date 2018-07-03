@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ionicframework.penchoyaida233650">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/icono_pencho_p"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash.SplashScreenActivity"
+            android:label="@string/app_names"
+            android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ionicframework.penchoyaida233650.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ionicframework.penchoyaida233650.detallepost.activity.ActivityDetallePost" android:screenOrientation="portrait"/>
+        <activity android:name="com.ionicframework.penchoyaida233650.detallepost.activity.ActivityDetallePost2" android:screenOrientation="portrait" android:logo="@mipmap/banner_aida"/>
+        <activity android:name="com.ionicframework.penchoyaida233650.podcast_deportes.activity.ActivityDetallePost3" android:screenOrientation="portrait"/>
+        <activity android:name="com.ionicframework.penchoyaida233650.podcast.activity.ActivityDetallePost4" android:screenOrientation="portrait"/>
+        <activity android:name="com.ionicframework.penchoyaida233650.podcast.activity.buscador_podcastPrincipal" android:screenOrientation="portrait" />
+        <activity android:name=".nosotros.activity.NosotrosListDetalleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".nosotros.activity.NosotrosDetalleActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Fotos.activity.Activity_Album_Detalle" android:screenOrientation="portrait"/>
+        <activity android:name=".videos.activity.Activity_Detalle_videos" android:screenOrientation="portrait"/>
+        <activity android:name=".podacast_exclusivos.activity.ActivityDetallePost22" android:screenOrientation="portrait" />
+        <activity android:name=".Fotos.activity.ActivityGallery" android:screenOrientation="portrait"/>
+        <service android:name="com.ionicframework.penchoyaida233650.NotificationService" />
+        <service android:name="com.ionicframework.penchoyaida233650.detallepost.service.NotificationService2" />
+        <service android:name="com.ionicframework.penchoyaida233650.NotificationService2new" />
+        <service android:name="com.ionicframework.penchoyaida233650.NotificationService3" />
+        <service android:name="com.ionicframework.penchoyaida233650.BackgroundSoundService" />
+
+        <receiver android:name="com.ionicframework.penchoyaida233650.newplay.util.util.receiver.NotificationBroadcast" >
+            <intent-filter>
+                <action android:name="imoves.com.panchoaida.delete" />
+                <action android:name="imoves.com.panchoaida.pause" />
+                <action android:name="imoves.com.panchoaida.next" />
+                <action android:name="imoves.com.panchoaida.play" />
+                <action android:name="imoves.com.panchoaida.previous" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+        <activity android:name=".NotificationReturnSlot"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"/>
+
+        <activity android:name="com.ionicframework.penchoyaida233650.play.activity.HelperActivity"/>
+
+
+        <activity android:name="com.ionicframework.penchoyaida233650.podacast_exclusivos.activity.reproductor_podcastExclusivos"/>
+
+
+        <activity android:name="com.ionicframework.penchoyaida233650.podacast_exclusivos.activity.buscador_podcastExclusivos"/>
+
+    </application>
+
+</manifest>

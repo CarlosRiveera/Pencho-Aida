@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    ​
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        ​
+        ​
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/anaranjado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.ionicframework.penchoyaida233650.util.ImageviewAdapter
+                android:layout_width="70dp"
+                android:layout_height="85dp"
+                android:layout_margin="1dp"
+                android:src="@drawable/pencho_podcast"
+                android:id="@+id/ImagenPreviewVideo"
+                />
+            ​
+        </LinearLayout>
+        ​
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TituloVideo"
+            android:layout_gravity="center_vertical"
+            android:text="Texto Descripcion"
+            android:textColor="@color/negro"
+            />
+        ​
+        ​
+        ​
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/background_grey">
+        ​
+    </LinearLayout>
+    ​
+    ​
+    ​
+</LinearLayout>

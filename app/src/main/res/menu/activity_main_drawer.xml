@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+
+            android:id="@+id/btnenvivo"
+            android:icon="@mipmap/home"
+            android:title="@string/penchoy"
+            />
+
+        <item
+            android:id="@+id/btnradio"
+            android:icon="@mipmap/radio"
+            android:title="@string/podcast" />
+
+
+        <item
+            android:id="@+id/PodcastExlusivos"
+            android:icon="@mipmap/micro_icon"
+            android:title="@string/podcaste" />
+        <item
+            android:id="@+id/btndeport"
+            android:icon="@mipmap/deport"
+            android:title="@string/deport"
+            />
+
+
+        <item
+            android:id="@+id/btnfoto"
+            android:icon="@mipmap/foto"
+            android:title="@string/fotos"
+            />
+
+        <item
+            android:id="@+id/btnvideo"
+            android:icon="@mipmap/videos_icon"
+            android:title="@string/videos"
+            />
+
+        <item
+            android:id="@+id/btnnosotros"
+            android:icon="@mipmap/contactenos"
+            android:title="@string/nosotros"
+            />
+
+        <item
+            android:id="@+id/btnclub"
+            android:icon="@mipmap/contactenos"
+            android:title="@string/club"
+            />
+
+    </group>
+
+
+</menu>

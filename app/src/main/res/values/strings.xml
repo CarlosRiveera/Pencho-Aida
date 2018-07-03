@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Pencho y Aida</string>
+    <string name="app_names">Pencho y Aida</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="podcasts">Podcasts</string>
+    <string name="pencho">Pencho y Aída</string>
+    <string name="vivo">En vivo</string>
+    <string name="penchoy">Pencho y Aída FM(En Vivo)</string>
+    <string name="podcast">Podcasts Programas de Radio</string>
+    <string name="podcaste">Podcasts Exclusivos</string>
+    <string name="deport">Deportes Fernando Palomo</string>
+    <string name="fotos">Fotos</string>
+    <string name="videos">Videos</string>
+    <string name="nosotros">Nosotros</string>
+    <string name="club">Club de Oyentes</string>
+    <string name="staff">Staff</string>
+    <string name="penchos">Pencho</string>
+    <string name="aida">Aída</string>
+    <string name="back">Back</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="player">Audio Player</string>
+    <string name="next">Next</string>
+    <string name="open_playlist">Open Playlist</string>
+    <string name="idle">Idle</string>
+    <string name="empty_text">Select song from below to play</string>
+    <string name="player_button">Album Art Screen</string>
+    <string name="cargando">Cargando</string>
+    <string name="registro">Registro exitósamente</string>
+    <string name="ocurrio">Ocurrio un problema, intente de nuevo</string>
+    <string name="escriban">Por favor escriba su nombre</string>
+    <string name="escrinafe">Por favor escriba su fecha de nacimiento</string>
+    <string name="escribacorre">Por favor escriba su correo electrónico</string>
+    <color name="orange">#ff3d00</color>
+    <color name="white">#ffffff</color>
+    <color name="opaque">#70000000</color>
+
+    <string name="compartir">Compartir</string>
+    <string name="cd_repeat">Repeat one or all</string>
+    <string name="cd_previous">Skip backwards</string>
+    <string name="cd_play">Play and pause</string>
+    <string name="cd_next">Skip forwards</string>
+    <dimen name="button_width">32dp</dimen>
+    <dimen name="small_button_width">28dp</dimen>
+    <dimen name="small_image_art_width">85dp</dimen>
+
+    <string name="pencho_aida"><![CDATA[Pencho y Aida]]></string>
+    <string name="NoResultados">No se encontraron Resultados</string>
+    <string name="errortrate">Error de conexión intente denuevo</string>
+    <string name="JSONflickrAlbumPrincipal"><![CDATA[https://api.flickr.com/services/rest/?method=flickr.photosets.getList&api_key=24a9f619ce0be3645ea52d3a72ffe4c9&user_id=138964743%40N07&page=:page&per_page=28&primary_photo_extras=&format=json&nojsoncallback=1]]></string>
+    <string name="lo_mejor_del_dia">LO MEJOR DEL DIA</string>
+    <string name="imagenalbum">ImagenAlbum</string>
+    <string name="pr_xima_estaci_n_pencho_y_aida_fm">Próxima estación: Pencho y Aída FM</string>
+    <string name="urlVideos"><![CDATA[https://www.googleapis.com/youtube/v3/search?key=AIzaSyBjLafX-DiBeZVirmCMVc1LhV887NujdoI&channelId=UCD5583eLpPln_47061TNUYA&part=snippet,id&order=date&maxResults=20]]></string>
+
+    <!--
+    dev 184.72.97.80
+    prod
+    http://penchoyaida.com -->
+    <string name="url">http://184.72.97.80</string>
+
+</resources>

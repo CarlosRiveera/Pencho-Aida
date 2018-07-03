@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <SearchView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchPodcast_exclusivos"
+            android:background="@color/naranja"
+            android:layout_margin="10dp"
+            android:queryHint="Buscar"
+            android:layout_gravity="center_horizontal" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+
+<LinearLayout
+    android:layout_weight="1"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/ImagenPodcastGeneral"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/ic_menu_gallery"
+    />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/anaranjado"
+            android:layout_gravity="center"
+            android:text="@string/pencho_aida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/TituloPrincipal"
+            android:textSize="18dp"/>
+        <TextView
+            android:textSize="12dp"
+            android:id="@+id/TituloSecundario"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Podcast Exclusivos"
+            android:layout_below="@+id/TituloPrincipal"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/DescripcionGeneralPodcast"
+            android:layout_margin="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST TEXTO "
+            android:textColor="@color/negro"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ListadoPodcast"
+            android:layout_width="match_parent"
+            android:layout_height="307dp">
+
+            </ListView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+</LinearLayout>

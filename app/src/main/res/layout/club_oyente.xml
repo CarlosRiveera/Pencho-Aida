@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/editnombre"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/negro"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/editfecha"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editnombre"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:editable="false"
+                android:textColor="@color/negro"
+                android:focusableInTouchMode="false"
+                android:hint="fecha" />
+
+            <Spinner
+                android:id="@+id/editpais"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editfecha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/edittelefono"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editpais"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:textColor="@color/negro"
+                android:gravity="center_horizontal"
+                android:hint="Teléfono" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/editemail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittelefono"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/negro"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:hint="Email" />
+
+            <EditText
+                android:singleLine="true"
+                android:id="@+id/editocupacion"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editemail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:hint="Ocupación" />
+
+            <LinearLayout
+                android:id="@+id/conte"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editocupacion"
+                android:background="#cccccc"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/SWpremios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Participar para ganar premios    "
+
+                    />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/SWpromocion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Recibir promociones/ofertas    "
+
+                    />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/conozco"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conte"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:gravity="top|left"
+                android:hint="Cuéntanos acerca de ti"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/negro"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/enviar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conozco"
+                android:layout_centerHorizontal="true"
+                android:background="#ef7a1d"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="Enviar" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

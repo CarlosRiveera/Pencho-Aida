@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:staggered="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                />
+
+            <TextView
+                android:id="@+id/textoMejorDelDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:text="@string/lo_mejor_del_dia"
+                android:textColor="@color/unselected_tabtext"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/gatito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/anaranjado">
+
+                <com.ionicframework.penchoyaida233650.util.ImageviewAdapter
+                    android:id="@+id/ImagenCabecera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:id="@+id/TextoCabecera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/grisBarra"
+                    android:shadowRadius="3"
+                    android:layout_alignBottom="@+id/ImagenCabecera"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView
+
+                android:id="@+id/GridViewAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                staggered:item_margin="5dp">
+
+
+            </com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
